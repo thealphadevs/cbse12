@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v15/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jun 2021 10:19:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Contact V15</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Select2 CSS --> 
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> 
+
+	<!-- jQuery --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+	<!-- Select2 JS --> 
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<!--===============================================================================================-->
+<meta name="robots" content="noindex, follow">
+</head>
+<body >
+
+	<div class="contact100-map" data-scrollwhell="0"  data-draggable="1" style="background-image: url(images/study2.jpg);"></div>
+	<!-- Image and text -->
+	<nav class="navbar">
+		<a class="navbar-brand" href="#">
+			<img src="/images/alpha.png" width="120" height="120" class="d-inline-block align-top" alt="AlphaCrat">
+			
+		</a>
+	</nav>
+	<div class="container-contact100">
+		
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Calculate your 12th Result
+				</span>
+				<span class="contact100-form-title-2">
+					Do check us out
+				</span>
+			</div>
+
+			<form class="contact100-form validate-form">
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Name:</span>
+					<input class="input100" type="text" name="name" placeholder="Enter Full name">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input101 validate-input selectfield" data-validate="Phone is required">
+					<span class="label-input100">School:</span>
+					<!-- Dropdown --> 
+					<select id='selSchool' style='width: 200px;' required="required" class="selectschools">
+						<option selected disabled value=''>Select School</option> 
+						<option value='1'>KV</option> 
+						<option value='2'>Convent</option> 
+						<option value='3'>Incubate</option> 
+						<option value='4'>Vishal</option> 
+						<option value='5'>Swastik</option> 
+					</select>
+					
+					<br/>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="marksdata">Enter your highest 3 subjects 10th Marks:</span>
+					<div class="flexdir topmargin">
+						<input class="input100" type="number" name="marksten1" placeholder="Marks Obtained 1" onkeypress="return this.value.length < 3;" oninput="if(this.value.length>=4) { this.value = this.value.slice(0,4); }" >
+						<input class="input100" required="required" type="number" name="markstentotal1" placeholder="Total Marks">
+					</div>
+					<div class="flexdir">
+						<input class="input100" type="number" name="marksten2" placeholder="Marks Obtained 2">
+						<input class="input100" type="number" name="markstentotal2" placeholder="Total Marks">
+					</div>
+					<div class="flexdir">
+						<input class="input100" type="number" name="marksten3" placeholder="Marks Obtained 3">
+						<input class="input100" type="number" name="markstentotal3" placeholder="Total Marks">
+					</div>
+
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="marksdata">Enter Your 11th Marks:</span>
+					<div class="flexdir topmargin">
+						<input class="input100" type="number" name="markselevengot" placeholder="Marks Obtained">
+						<input class="input100" type="number" name="markseleventotal" placeholder="Total Marks">
+					</div>
+
+
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="marksdata">Enter Your Recent 12th Marks:</span>
+					<div class="flexdir topmargin">
+						<input class="input100" type="number" name="markstwelvegot" placeholder="Marks Obtained">
+						<input class="input100" type="number" name="markstwelvetotal" placeholder="Total Marks">
+					</div>
+
+					<span class="focus-input100"></span>
+				</div>
+
+				<!--<div class="container-contact100-form-btn">
+					<p>We have calculated your result please enter email to get it</p>
+				</div>-->
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email:</span>
+					<input class="input100" type="text" name="email" placeholder="Enter email addess">
+					<span class="focus-input100"></span>
+				</div>
+				
+				
+
+				<div class="container-contact100-form-btn">		
+					
+					<button class="contact100-form-btn">
+						<span>
+							Get Result 
+							<i class="fa fa-angle-double-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+					<div class="whatsappdiv">
+						<a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp" style="font-size:48px;color:#57b846"></i></a>
+					</div>
+					
+				</div>
+				
+			</form>
+			
+		</div>
+
+	
+		
+	</div>
+	<div>
+		<p class="footer">Initiative by <a href="https://alphadevs.tech/"> alphadevs.tech</a></p>
+	</div>
+	
+	
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/dropdown.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+<script defer src="../../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6613c6503af5de25","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
+</body>
+
+<!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v15/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jun 2021 10:19:05 GMT -->
+</html>
