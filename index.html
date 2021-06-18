@@ -32,6 +32,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
 
     <!-- Select2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
@@ -47,11 +48,12 @@
 
 <body>
 
-    <div class="contact100-map" data-scrollwhell="0" data-draggable="1" style="background-image: url(images/study2.jpg);"></div>
+    <div class="contact100-map" data-scrollwhell="0" data-draggable="1"
+        style="background-image: url(images/study2.jpg);"></div>
     <!-- Image and text -->
     <nav class="navbar">
         <a class="navbar-brand" href="#">
-            <img src="/images/alpha.png" width="120" height="120" class="d-inline-block align-top" alt="AlphaCrat">
+            <img src="./images/alpha.png" width="120" height="120" class="d-inline-block align-top" alt="AlphaCrat">
 
         </a>
     </nav>
@@ -61,11 +63,11 @@
         <div class="wrap-contact100">
             <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
                 <span class="contact100-form-title-1">
-					Calculate your 12th Result
-				</span>
+                    Calculate your 12th Result
+                </span>
                 <span class="contact100-form-title-2">
-					Do check us out
-				</span>
+                    Do check us out
+                </span>
             </div>
 
             <form class="contact100-form validate-form">
@@ -79,24 +81,19 @@
                 <div class="wrap-input101 validate-input selectfield" data-validate="Phone is required">
                     <span class="label-input100">School:</span>
                     <!-- Dropdown -->
-                    <select id='selSchool' style='width: 200px;' required="required" class="selectschools">
-						<option selected disabled value=''>Select School</option> 
-						<option value='1'>KV</option> 
-						<option value='2'>Convent</option> 
-						<option value='3'>Incubate</option> 
-						<option value='4'>Vishal</option> 
-						<option value='5'>Swastik</option> 
-					</select>
-
-                    <br/>
+                    <input id='selSchool' style='width: 200px;' required="required" class="selectschools" type="text">
+                    <br />
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="marksdata">Enter your highest 3 subjects 10th Marks:</span>
                     <div class="flexdir topmargin">
-                        <input class="input100" type="number" id="m1" name="marksten1" placeholder="Marks Obtained 1" onkeypress="return this.value.length < 3;" oninput="if(this.value.length>=4) { this.value = this.value.slice(0,4); }">
-                        <input class="input100" required="required" id="o1" type="number" name="markstentotal1" placeholder="Total Marks">
+                        <input class="input100" type="number" id="m1" name="marksten1" placeholder="Marks Obtained 1"
+                            onkeypress="return this.value.length < 3;"
+                            oninput="if(this.value.length>=4) { this.value = this.value.slice(0,4); }">
+                        <input class="input100" required="required" id="o1" type="number" name="markstentotal1"
+                            placeholder="Total Marks">
                     </div>
                     <div class="flexdir">
                         <input class="input100" type="number" id="m2" name="marksten2" placeholder="Marks Obtained 2">
@@ -113,7 +110,8 @@
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="marksdata">Enter Your 11th Marks:</span>
                     <div class="flexdir topmargin">
-                        <input class="input100" id="m4" type="number" name="markselevengot" placeholder="Marks Obtained">
+                        <input class="input100" id="m4" type="number" name="markselevengot"
+                            placeholder="Marks Obtained">
                         <input class="input100" id="o4" type="number" name="markseleventotal" placeholder="Total Marks">
                     </div>
 
@@ -123,7 +121,8 @@
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="marksdata">Enter Your Recent 12th Marks:</span>
                     <div class="flexdir topmargin">
-                        <input class="input100" id="m5" type="number" name="markstwelvegot" placeholder="Marks Obtained">
+                        <input class="input100" id="m5" type="number" name="markstwelvegot"
+                            placeholder="Marks Obtained">
                         <input class="input100" id="o5" type="number" name="markstwelvetotal" placeholder="Total Marks">
                     </div>
 
@@ -145,13 +144,14 @@
                 <div class="container-contact100-form-btn">
 
                     <button onclick="getResult()" class="contact100-form-btn">
-						<span>
-							Get Result 
-							<i class="fa fa-angle-double-right m-l-7" aria-hidden="true"></i>
-						</span>
-					</button>
+                        <span>
+                            Get Result
+                            <i class="fa fa-angle-double-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
                     <div class="whatsappdiv">
-                        <a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp" style="font-size:48px;color:#57b846"></i></a>
+                        <a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp"
+                                style="font-size:48px;color:#57b846"></i></a>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
                 </div>
@@ -206,7 +206,12 @@
         gtag('config', 'UA-23581568-13');
     </script>
 
-    <script defer src="../../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6613c6503af5de25","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
+    <script defer src="../../../../static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"rayId":"6613c6503af5de25","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
+
+    <script>
+        autocomplete(document.getElementById("selSchool"), schools);
+    </script>
 </body>
 
 <!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v15/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jun 2021 10:19:05 GMT -->
