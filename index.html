@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>Responsive Registration Form</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="">
+                    <form>
+                        <!-- <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="email" name="email" placeholder="Email" required />
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="col_half">
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" name="name" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" name="name" placeholder="Last Name" required />
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="input_field radio_option">
+                            <input type="radio" name="radiogroup1" id="rd1">
+                            <label for="rd1">Male</label>
+                            <input type="radio" name="radiogroup1" id="rd2">
+                            <label for="rd2">Female</label>
+                        </div>
+                        <div class="input_field select_option">
+                            <select>
+                        <option>Select a country</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                      </select>
+                            <div class="select_arrow"></div>
+                        </div>
+
+
+
+
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="m1" name="gain_10th_m1" placeholder="enter marks 1" required />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="o1" name="gain_10th_m1" placeholder="out of" required />
+                        </div>
+                        <br>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="m2" name="gain_10th_m1" placeholder="enter marks 2" required />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="o2" name="gain_10th_m1" placeholder="out of" required />
+                        </div>
+                        <br>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="m3" name="gain_10th_m1" placeholder="enter marks 3" required />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="o3" name="gain_10th_m1" placeholder="out of" required />
+                        </div>
+                        <br>
+
+
+
+
+
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="m4" name="gain_10th_m1" placeholder="enter 11th  marks " required />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="o4" name="gain_10th_m1" placeholder="out of" required />
+                        </div>
+                        <br>
+
+
+
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="m5" name="gain_10th_m1" placeholder="enter 12th  marks " required />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="number" id="o5" name="gain_10th_m1" placeholder="out of" required />
+                        </div>
+                        <br>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+
+                        </div class="input_field checkbox_option">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1">I agree with terms and conditions</label>
+                </div>
+                <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb2">
+                    <label for="cb2">I want to receive the newsletter</label>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LfEZj8bAAAAAKTaP0O7ZBQHmAOJ-FdtuX-v0Xsx"></div>
+                <input class="button" onclick="getResult()" type="button" value="Register" />
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <p class="credit">Developed by <a href="http://www.designtheway.com" target="_blank">Design the way</a></p>
+
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            alert("grecaptcha is ready!");
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+
+    <script>
+        function getResult() {
+            var m1 = document.getElementById("m1").value;
+            var o1 = document.getElementById("o1").value;
+            var m2 = document.getElementById("m2").value;
+            var o2 = document.getElementById("o2").value;
+            var m3 = document.getElementById("m3").value;
+            var o3 = document.getElementById("o3").value;
+
+            var m4 = parseInt(document.getElementById("m4").value);
+            var o4 = parseInt(document.getElementById("o4").value);
+            var m5 = parseInt(document.getElementById("m5").value);
+            var o5 = parseInt(document.getElementById("o5").value);
+
+
+            //tenth percentage
+            var total = parseInt(o1) + parseInt(o2) + parseInt(o3);
+            var gain = parseInt(m1) + parseInt(m2) + parseInt(m3);
+
+            var tenthTotalPercentage = (gain / total) * 100;
+            var needed_thirtyPercent = tenthTotalPercentage * (30 / 100);
+
+
+            //11th percentage
+            var eleventhTotalPercentage = (m4 / o4) * 100;
+            var needed_thirtyPercentForEleventh = (eleventhTotalPercentage) * (30 / 100);
+
+            //12th percentage
+
+            var twelthTotalPercentage = (m5 / o5) * 100;
+            var needed_fourtyPercentForTwelth = (twelthTotalPercentage) * (40 / 100);
+
+
+            var finalResult = needed_thirtyPercent + needed_thirtyPercentForEleventh + needed_fourtyPercentForTwelth;
+
+            console.log(finalResult);
+        }
+    </script>
+</body>
+
+</html>
