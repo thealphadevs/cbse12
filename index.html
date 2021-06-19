@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v15/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jun 2021 10:19:00 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<!-- /Added by HTTrack -->
 
 <head>
     <title>Contact V15</title>
@@ -49,24 +46,24 @@
 <body>
 
     <div class="contact100-map" data-scrollwhell="0" data-draggable="1"
-        style="background-image: url(images/study2.jpg);"></div>
+        style="background-image: url(images/study3.jpg);"></div>
     <!-- Image and text -->
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="./images/alpha.png" width="120" height="120" class="d-inline-block align-top" alt="AlphaCrat">
-
+    
+    <nav class="navbar justify-content-left opa">
+        <a class="navbar-brand justify-content-left" href="https://alphadevs.tech/">
+            <img src="./images/alpha.png" width="70" height="70" class="d-inline-block alphacratimg" alt="AlphaCrat" > 
         </a>
+
     </nav>
+    
     <div class="container-contact100">
-
-
         <div class="wrap-contact100">
             <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
-                <span class="contact100-form-title-1">
-                    Calculate your 12th Result
-                </span>
+                <h1 class="contact100-form-title-1">
+                    Predict your class 12th result 2021
+                </h1>
                 <span class="contact100-form-title-2">
-                    Do check us out
+                    Helping students nagivate through ups and downs of new CBSE result guidelines 2021
                 </span>
             </div>
 
@@ -78,24 +75,22 @@
                 </div>
 
 
-                <div class="wrap-input101 validate-input selectfield" data-validate="Phone is required">
+                <div class="wrap-input100 validate-input" data-validate="">
                     <span class="label-input100">School:</span>
                     <!-- Dropdown -->
-                    <input id='selSchool' style='width: 200px;' required="required" class="selectschools" type="text">
+                    <input id='selSchool'  required="required" class="selectschools" type="text" placeholder="Select School">
                     <br />
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="marksdata">Enter your highest 3 subjects 10th Marks:</span>
-                    <div class="flexdir topmargin">
-                        <input class="input100" type="number" id="m1" name="marksten1" placeholder="Marks Obtained 1"
-                            onkeypress="return this.value.length < 3;"
-                            oninput="if(this.value.length>=4) { this.value = this.value.slice(0,4); }">
+                    <div class="flexdir topmargin wrap-input102">
+                        <input class="input100" type="number" id="m1" name="marksten1" placeholder="Marks Obtained 1">
                         <input class="input100" required="required" id="o1" type="number" name="markstentotal1"
                             placeholder="Total Marks">
                     </div>
-                    <div class="flexdir">
+                    <div class="flexdir wrap-input102">
                         <input class="input100" type="number" id="m2" name="marksten2" placeholder="Marks Obtained 2">
                         <input class="input100" type="number" id="o2" name="markstentotal2" placeholder="Total Marks">
                     </div>
@@ -133,27 +128,47 @@
 					<p>We have calculated your result please enter email to get it</p>
 				</div>-->
 
+                <div class="wrap-input101 validate-input selectfield" data-validate="Select stream">
+                    <span class="label-input100">Stream:</span>
+					<!-- Dropdown --> 
+					<select id='selStream' style='width: 200px;' required="required" class="selectstream">
+						<option selected disabled value=''>Select Stream</option> 
+						<option value='1'>PCM</option> 
+						<option value='2'>PCB</option> 
+						<option value='3'>PCMB</option> 
+						<option value='4'>Arts</option> 
+						<option value='5'>Commerce</option> 
+					</select>
+
+                </div>
+
                 <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <span class="label-input100">Email:</span>
                     <input class="input100" type="text" name="email" placeholder="Enter email addess">
+                    
                     <span class="focus-input100"></span>
                 </div>
 
-
+               
+      
 
                 <div class="container-contact100-form-btn">
-
+                    
                     <button onclick="getResult()" class="contact100-form-btn">
                         <span>
                             Get Result
                             <i class="fa fa-angle-double-right m-l-7" aria-hidden="true"></i>
                         </span>
                     </button>
-                    <div class="whatsappdiv">
-                        <a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp"
-                                style="font-size:48px;color:#57b846"></i></a>
+                    
+                    <div class="flexboxs">
+                        <div class="g-recaptcha" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
+                        <div class="whatsappdiv flexdir">
+                            <p>Share on</p>
+                            <a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp"
+                                    style="font-size:22px;color:#57b846"></i></a>
+                        </div>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
                 </div>
 
             </form>
@@ -163,8 +178,9 @@
 
 
     </div>
-    <div>
-        <p class="footer">Initiative by <a href="https://alphadevs.tech/"> alphadevs.tech</a></p>
+    <div class="d-flex justify-content-between footermain">
+        <p class="footerleft">An initiative by <a href="https://alphadevs.tech/"> alphadevs.tech</a></p>
+        <p class="footerright"><a href="mailto:info@alphadevs.tech">info@alphadevs.tech</a></p>
     </div>
 
 
@@ -187,7 +203,6 @@
     <!--===============================================================================================-->
     <script src="vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
     <script src="js/map-custom.js"></script>
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
@@ -213,7 +228,5 @@
         autocomplete(document.getElementById("selSchool"), schools);
     </script>
 </body>
-
-<!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v15/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jun 2021 10:19:05 GMT -->
 
 </html>

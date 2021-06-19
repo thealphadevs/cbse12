@@ -176,7 +176,23 @@ button:hover {
 iframe {
 	border: none!important
 }
-
+.navbar-nav {
+	justify-content: center;
+	text-align: center;
+	margin-left:-90px;
+}
+.navbar-nav  > h1{
+	justify-content: center;
+	text-align: center;
+	font-size:20px;
+	color:black;
+}
+.alphacratimg{
+	margin-left: 10px;
+}
+.opa{
+	background:rgba(125, 126, 125, 0.7);
+}
 .container-contact100 {
 	width: 100%;
 	min-height: 100vh;
@@ -246,6 +262,7 @@ iframe {
 	font-size: 15px;
 	color: #fff;
 	line-height: 1.5;
+	width:75%;
 	text-align: center
 }
 
@@ -279,11 +296,18 @@ iframe {
 	border-bottom: 1px solid #b2b2b2;
 	margin-bottom: 26px
 }
+.wrap-input102 {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #b2b2b2;
+	margin-bottom: 18px;
+}
 .wrapinput101{
     width: 100%;
 	position: relative;;
 	margin-bottom: 26px
 }
+
 .label-input100 {
 	font-family: Poppins-Regular;
 	font-size: 15px;
@@ -360,7 +384,9 @@ textarea.input100 {
 	flex-wrap: wrap;
 	padding-top: 8px
 }
-
+.container-contact100-form-btn >button{
+	margin-bottom:19px;
+}
 .contact100-form-btn {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -391,6 +417,7 @@ textarea.input100 {
 	transition: all .4s
 }
 
+
 .contact100-form-btn:hover {
 	background-color: #333;
 
@@ -405,7 +432,8 @@ textarea.input100 {
 }
 .selectfield{
     padding-top:10px;
-    padding-bottom:25px;
+    padding-bottom:17px;
+
     color: gray !important;
     font-family: Poppins-Regular;
     font-size: 15px;
@@ -416,8 +444,37 @@ textarea.input100 {
     font-size: 15px;
     color: gray !important;
     line-height: 1.2;
-    display: block;
+    margin-bottom:10px;
+    background: 0 0;
+    padding: 0 5px;
+}
+.selectstream{
+	border: 1px solid #d4d4d4;
+	border-color: gray;
+	border-radius: 5px;
+	color: gray !important;
+
+}
+.selectstream > option{
+	position: absolute;
+    overflow: hidden;
+    height: 400px;
     width: 100%;
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+	border-radius: 10px;
+	border-color: gray;
+	font-family: Poppins-Regular;
+    font-size: 15px;
+    color: gray !important;
+    line-height: 1.2;
+    display: block;
     background: 0 0;
     padding: 0 5px;
 }
@@ -452,28 +509,86 @@ textarea.input100 {
     margin-top:15px;
 }
 .whatsappdiv{
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-left:48%;    
+	margin-bottom:9px;
+	margin-top:13%;
+	margin-left:3px;
 }
-.footer{
+.whatsappdiv >p{
+	margin-top:3px;
+  margin-right: 3px;
+}
+.flexboxs{
+	display: flex;
+}
+.footermain{
+	background:rgba(125, 126, 125, 0.3);
+}
+
+.footerleft{
+	margin-left:20px;
+    padding-top: 5px;
+    color:rgb(172, 172, 172);
+    font-size:17px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.footerleft > a{
+    font-size:20px;
+    color:white;
+}
+.footerleft > a:hover{
+    font-size:20px;
+    color:#57b846;
+}
+.footerright{
+	align-items: right;
+	float:right;
+	justify-content: right;
+	margin-right:20px;
     padding-top: 5px;
     color:#555;
     font-size:15px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: right;
 }
-.footer > a{
-    font-size:20px;
+.footerright > a{
+	 font-size:20px;
     color:white;
 }
-.footer > a:hover{
+.footerright > a:hover{
     font-size:20px;
     color:#57b846;
 }
+
 @media(max-width:576px) {
 	.contact100-form {
 		padding: 43px 15px 57px 117px
+	}
+	.flexboxs{
+		display: flex;
+		flex-direction: column;	
+	}
+	.whatsappdiv{
+		margin-top:15px;
+		margin-bottom:9px;
+		margin-left:0px;
+	}
+	.footerright{
+		margin-right:24%;
+	}
+	.footerright > a{
+		font-size:17px;
+	}
+	.footerright > a:hover{
+		font-size:17px;
+	}
+	.footerleft{
+		margin-left:22%;
+		font-size:15px;
+
+	}
+	.footerleft > a{
+		font-size:17px;
 	}
 }
 
@@ -495,6 +610,10 @@ textarea.input100 {
     .whatsappdiv{
         margin-left:43%;    
     }
+	.footermain{
+		flex-direction: column;
+		
+	}
 }
 @media(max-width:375px){
     .whatsappdiv{
