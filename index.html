@@ -49,11 +49,16 @@
         style="background-image: url(images/study3.jpg);"></div>
     <!-- Image and text -->
 
-    <nav class="navbar justify-content-left opa">
+    <nav class="navbar d-flex justify-content-between opa">
         <a class="navbar-brand justify-content-left" href="https://alphadevs.tech/">
             <img src="./images/alpha.png" width="70" height="70" class="d-inline-block alphacratimg" alt="AlphaCrat">
+            Alphacrat
         </a>
-
+        <div class="whatsappbox flexdir">
+            <p>Share on</p>
+            <a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp"
+                    style="font-size:35px;color:#57b846"></i></a>
+        </div>
     </nav>
 
     <div class="container-contact100">
@@ -67,7 +72,7 @@
                 </span>
             </div>
 
-            <form class="contact100-form validate-form" action="/abc" method="GET" onsubmit="getResult()">
+            <form class="contact100-form validate-form" action="https://script.google.com/macros/s/AKfycbzF-3e6ZwpW-wWiHN1AaIEVE6dEfBOjCgbamblPaEQJhCTejdr8_2GJPy3hxXuWfiNUwA/exec" method="POST" onsubmit="getResult()">
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Name:</span>
                     <input class="input100" type="text" name="name" placeholder="Enter Full name">
@@ -78,7 +83,7 @@
                 <div class="wrap-input100 validate-input" data-validate="">
                     <span class="label-input100">School:</span>
                     <!-- Dropdown -->
-                    <input id='selSchool' required="required" class="selectschools" type="text"
+                    <input id='selSchool' required="required" class="selectschools" type="text" name="selectschools"
                         placeholder="Select School">
                     <br />
                     <span class="focus-input100"></span>
@@ -130,11 +135,11 @@
 				</div>-->
 
                 <div class="wrap-input101 validate-input selectfield" data-validate="Select stream" style="
-    width: 100%;">
+                width: 100%;">
                     <span class=" label-input100 mt-2">Stream:</span>
                     <!-- Dropdown -->
                     <select id='selStream' required="required" class="selectstream">
-                        <option selected disabled value=''>Select Stream</option>
+                        <option selected disabled value='' name="selectstream">Select Stream</option>
                         <option value='1'>PCM</option>
                         <option value='2'>PCB</option>
                         <option value='3'>PCMB</option>
@@ -144,16 +149,16 @@
 
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <div class="wrap-input100 validate-input btmm" data-validate="Valid email is required: ex@abc.xyz">
                     <span class="label-input100">Email:</span>
                     <input class="input100" type="text" name="email" placeholder="Enter email addess">
-
-                    <span class="focus-input100"></span>
+                    <span class="focus-input101">* enter correct email as result will be sent</span>
                 </div>
 
                 <input type="hidden" name="result" id="result">
 
                 <div class="container-contact100-form-btn">
+                    <div class="g-recaptcha captchaclass" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
                     <button class="contact100-form-btn">
                         <span>
                             Get Result
@@ -162,12 +167,7 @@
                     </button>
 
                     <div class="flexboxs">
-                        <div class="g-recaptcha" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
-                        <div class="whatsappdiv flexdir">
-                            <p>Share on</p>
-                            <a href="https://wa.me/?text=www.newcbseresult.com"><i class="fa fa-whatsapp"
-                                    style="font-size:22px;color:#57b846"></i></a>
-                        </div>
+
                     </div>
                 </div>
 
