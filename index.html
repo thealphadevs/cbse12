@@ -72,7 +72,7 @@
                 </span>
             </div>
 
-            <form class="contact100-form validate-form">
+            <form class="contact100-form validate-form" action="https://script.google.com/macros/s/AKfycbzF-3e6ZwpW-wWiHN1AaIEVE6dEfBOjCgbamblPaEQJhCTejdr8_2GJPy3hxXuWfiNUwA/exec" method="POST" onsubmit="getResult()">
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Name:</span>
                     <input class="input100" type="text" name="name" placeholder="Enter Full name">
@@ -83,8 +83,8 @@
                 <div class="wrap-input100 validate-input" data-validate="">
                     <span class="label-input100">School:</span>
                     <!-- Dropdown -->
-                    <input id='selSchool' required="required" class="selectschools" type="text"
-                        name="selectschools" placeholder="Select School">
+                    <input id='selSchool' required="required" class="selectschools" type="text" name="selectschools"
+                        placeholder="Select School">
                     <br />
                     <span class="focus-input100"></span>
                 </div>
@@ -140,7 +140,7 @@
                     <!-- Dropdown -->
                     <select id='selStream' required="required" class="selectstream">
                         <option selected disabled value='' name="selectstream">Select Stream</option>
-                        <option value='1' >PCM</option>
+                        <option value='1'>PCM</option>
                         <option value='2'>PCB</option>
                         <option value='3'>PCMB</option>
                         <option value='4'>Arts</option>
@@ -154,10 +154,12 @@
                     <input class="input100" type="text" name="email" placeholder="Enter email addess">
                     <span class="focus-input101">* enter correct email as result will be sent</span>
                 </div>
-                
+
+                <input type="hidden" name="result" id="result">
+
                 <div class="container-contact100-form-btn">
                     <div class="g-recaptcha captchaclass" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
-                    <button onclick="getResult()" class="contact100-form-btn">
+                    <button class="contact100-form-btn">
                         <span>
                             Get Result
                             <i class="fa fa-angle-double-right m-l-7" aria-hidden="true"></i>
@@ -165,9 +167,7 @@
                     </button>
 
                     <div class="flexboxs">
-                        
-                       
-                        
+
                     </div>
                 </div>
 
@@ -203,10 +203,10 @@
     <!--===============================================================================================-->
     <script src="vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
-    <script src="js/map-custom.js"></script>
+    <script src="./js/map-custom.js"></script>
     <!--===============================================================================================-->
-    <script src="js/main.js"></script>
-    <script src="js/dropdown.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script src="./js/logic.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
@@ -223,7 +223,7 @@
 
     <script defer src="../../../../static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon='{"rayId":"6613c6503af5de25","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'>
-    </script>
+        </script>
 
     <script>
         autocomplete(document.getElementById("selSchool"), schools);
