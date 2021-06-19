@@ -38,6 +38,8 @@
         } else if ($(input).attr('type') == 'number') {
             if ($(input).val().trim() == '') {
                 return false;
+            } else if ($(input).val() < 0) {
+                return false;
             } else if ($(input).hasClass("max-marks-100") && $(input).val() > 100) {
                 return false;
             } else if ($(input).hasClass("max-marks-1000") && $(input).val() > 1000) {
