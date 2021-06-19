@@ -575,7 +575,7 @@ textarea.input100 {
 
 .footerleft {
 	flex: 1;
-	margin-left:15px;
+	margin-left:25px;
 	color: rgb(172, 172, 172);
 	font-size: 17px;
 	text-align: left;
@@ -587,7 +587,7 @@ textarea.input100 {
 	flex: 1;
 	align-items: right;
 	justify-content: right;
-	margin-right: 20px;
+	margin-right: 25px;
 	color: #555;
 	font-size: 15px;
 	text-align: right;
