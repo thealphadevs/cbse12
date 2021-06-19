@@ -63,6 +63,7 @@ body {
 .whatsappbox > .shareon{
     margin-right: 25px;
 }
+
 .succimg{
-  width:130px;
+  transform: scale(1.3);
 }
