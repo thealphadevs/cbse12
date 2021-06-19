@@ -48,14 +48,14 @@
     <div class="contact100-map" data-scrollwhell="0" data-draggable="1"
         style="background-image: url(images/study3.jpg);"></div>
     <!-- Image and text -->
-    
+
     <nav class="navbar justify-content-left opa">
         <a class="navbar-brand justify-content-left" href="https://alphadevs.tech/">
-            <img src="./images/alpha.png" width="70" height="70" class="d-inline-block alphacratimg" alt="AlphaCrat" > 
+            <img src="./images/alpha.png" width="70" height="70" class="d-inline-block alphacratimg" alt="AlphaCrat">
         </a>
 
     </nav>
-    
+
     <div class="container-contact100">
         <div class="wrap-contact100">
             <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
@@ -78,7 +78,8 @@
                 <div class="wrap-input100 validate-input" data-validate="">
                     <span class="label-input100">School:</span>
                     <!-- Dropdown -->
-                    <input id='selSchool'  required="required" class="selectschools" type="text" placeholder="Select School">
+                    <input id='selSchool' required="required" class="selectschools" type="text"
+                        placeholder="Select School">
                     <br />
                     <span class="focus-input100"></span>
                 </div>
@@ -128,39 +129,40 @@
 					<p>We have calculated your result please enter email to get it</p>
 				</div>-->
 
-                <div class="wrap-input101 validate-input selectfield" data-validate="Select stream">
-                    <span class="label-input100">Stream:</span>
-					<!-- Dropdown --> 
-					<select id='selStream' style='width: 200px;' required="required" class="selectstream">
-						<option selected disabled value=''>Select Stream</option> 
-						<option value='1'>PCM</option> 
-						<option value='2'>PCB</option> 
-						<option value='3'>PCMB</option> 
-						<option value='4'>Arts</option> 
-						<option value='5'>Commerce</option> 
-					</select>
+                <div class="wrap-input101 validate-input selectfield" data-validate="Select stream" style="
+    width: 100%;">
+                    <span class=" label-input100 mt-2">Stream:</span>
+                    <!-- Dropdown -->
+                    <select id='selStream' required="required" class="selectstream">
+                        <option selected disabled value=''>Select Stream</option>
+                        <option value='1'>PCM</option>
+                        <option value='2'>PCB</option>
+                        <option value='3'>PCMB</option>
+                        <option value='4'>Arts</option>
+                        <option value='5'>Commerce</option>
+                    </select>
 
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <span class="label-input100">Email:</span>
                     <input class="input100" type="text" name="email" placeholder="Enter email addess">
-                    
+
                     <span class="focus-input100"></span>
                 </div>
 
-               
-      
+
+
 
                 <div class="container-contact100-form-btn">
-                    
+
                     <button onclick="getResult()" class="contact100-form-btn">
                         <span>
                             Get Result
                             <i class="fa fa-angle-double-right m-l-7" aria-hidden="true"></i>
                         </span>
                     </button>
-                    
+
                     <div class="flexboxs">
                         <div class="g-recaptcha" data-sitekey="6LcliD8bAAAAACCgKRWkCd-d07IAh0z6Qpxd_6cD"></div>
                         <div class="whatsappdiv flexdir">
@@ -222,7 +224,8 @@
     </script>
 
     <script defer src="../../../../static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon='{"rayId":"6613c6503af5de25","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
+        data-cf-beacon='{"rayId":"6613c6503af5de25","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'>
+    </script>
 
     <script>
         autocomplete(document.getElementById("selSchool"), schools);
