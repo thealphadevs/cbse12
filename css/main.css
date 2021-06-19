@@ -195,7 +195,7 @@ iframe {
 }
 
 .opa {
-	background: rgba(125, 126, 125, 0.7);
+	background: rgba(35, 36, 35, 0.4);
 }
 .opa > a{
 	color:white;
@@ -568,7 +568,7 @@ textarea.input100 {
 	margin-bottom:17px;
 }
 .footermain {
-	background: rgba(125, 126, 125, 0.3);
+	background: rgba(35, 36, 35, 0.4);
 }
 
 .footerleft {
