@@ -33,4 +33,7 @@ function getResult() {
     var finalResult = needed_thirtyPercent + needed_thirtyPercentForEleventh + needed_fourtyPercentForTwelth;
 
     console.log(finalResult.toFixed(2));
+    document.getElementById("result").value = finalResult.toFixed(2);
+
+    return true;
 }
