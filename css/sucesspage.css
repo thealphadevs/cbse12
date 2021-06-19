@@ -1,0 +1,65 @@
+body {
+    
+    text-align: center;
+  }
+  .successfont {
+      color: rgb(75, 75, 75);
+    font-family: Poppins-Regular !important;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #404F5E;
+    font-family: Poppins-Regular;
+      font-size:20px;
+      margin: 0;
+    }
+  i {
+    color: #9ABC66;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left:-15px;
+  }
+  .card {
+    justify-content: center;
+    background: rgba(244, 245, 244, 0.9) !important;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    margin: 0 auto;
+  }
+  .wrap-contact105{
+    justify-content: center;
+    width: 500px;
+    background: rgba(125, 126, 125, 0.5);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative
+  }
+  
+.contact101-form-btn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px;
+	border-radius: 12px;
+	min-width: 180px;
+    max-width: 280px;
+	height: 40px;
+	background-color: #57b846;
+	font-family: Poppins-Regular;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.2;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	-moz-transition: all .4s;
+	transition: all .4s
+}
+.whatsappbox > .shareon{
+    margin-right: 25px;
+}
