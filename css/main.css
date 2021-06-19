@@ -569,46 +569,48 @@ textarea.input100 {
 }
 .footermain {
 	background: rgba(35, 36, 35, 0.5);
+	display: flex;
+	justify-content:space-evenly;
 }
 
 .footerleft {
-	margin-left: 20px;
-	padding-top: 5px;
+	flex: 1;
+	margin-left:15px;
 	color: rgb(172, 172, 172);
 	font-size: 17px;
-	padding-bottom: 10px;
 	text-align: left;
 }
-
-.footerleft>a {
-	font-size: 20px;
-	color: white;
+.footerleft>p{
+	font-size: 17px;
 }
-
-.footerleft>a:hover {
-	font-size: 20px;
-	color: #57b846;
-}
-
 .footerright {
+	flex: 1;
 	align-items: right;
-	float: right;
 	justify-content: right;
 	margin-right: 20px;
-	padding-top: 5px;
 	color: #555;
 	font-size: 15px;
-	padding-bottom: 10px;
 	text-align: right;
 }
 
-.footerright>a {
-	font-size: 20px;
+.footerleft>p>a {
+	font-size: 19px;
 	color: white;
 }
 
-.footerright>a:hover {
-	font-size: 20px;
+.footerleft>p>a:hover {
+	font-size: 19px;
+	color: #57b846;
+}
+
+
+.footerright>p>a {
+	font-size: 19px;
+	color: white;
+}
+
+.footerright>p>a:hover {
+	font-size: 19px;
 	color: #57b846;
 }
 .whatsappbox{
@@ -635,25 +637,31 @@ textarea.input100 {
 		margin-left: 0px;
 	}
 
-	.footerright {
-		margin-right: 24%;
+	.footermain{
+		display: flex;	
+		
 	}
-
-	.footerright>a {
+	.footerright>p>a {
 		font-size: 17px;
+		margin-left:40px;
 	}
 
-	.footerright>a:hover {
+	.footerright>p>a:hover {
 		font-size: 17px;
 	}
 
 	.footerleft {
-		margin-left: 22%;
-		font-size: 15px;
 
+		float:none;
+		text-align: center;
+	}
+	.footerright{
+
+		float:none;
+		text-align: center;
 	}
 
-	.footerleft>a {
+	.footerleft>p>a {
 		font-size: 17px;
 	}
 }
