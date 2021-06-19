@@ -191,7 +191,7 @@ iframe {
 }
 
 .alphacratimg {
-	margin-left: 10px;
+	margin-left: 6px;
 }
 
 .opa {
@@ -617,7 +617,8 @@ textarea.input100 {
 	margin-right:10px;
 }
 .whatsappbox > p{
-	font-size:22px;
+	margin-top:6px;
+	font-size:17px;
 	margin-right:9px;
 	color:white;
 }
