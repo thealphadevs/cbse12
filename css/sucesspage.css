@@ -3,7 +3,7 @@ body {
     text-align: center;
   }
   .successfont {
-      color: rgb(75, 75, 75);
+      color: rgb(41, 41, 41);
     font-family: Poppins-Regular !important;
       font-size: 18px;
       margin-bottom: 10px;
@@ -22,7 +22,7 @@ body {
   }
   .card {
     justify-content: center;
-    background: rgba(244, 245, 244, 0.9) !important;
+    background: rgba(249, 250, 249, 0.9) !important;
     padding: 60px;
     border-radius: 4px;
     box-shadow: 0 2px 3px #C8D0D8;
