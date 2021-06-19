@@ -5,8 +5,7 @@
 
 <head>
     <title>CBSE Class 12 | Result Predictor | AlphaDevs</title>
-	<meta property="og:title"
-        content="CBSE Class 12 Result Predictor | AlphaDevs" />
+    <meta property="og:title" content="CBSE Class 12 Result Predictor | AlphaDevs" />
     <link rel="canonical" href="https://newcbseresult.com/" />
     <meta property="og:url" content="https://newcbseresult.com/" />
     <meta property="og:type" content="Website" />
@@ -18,7 +17,7 @@
     <meta name="keywords"
         content="cbse,results,result,new cbse,new result,cbse result,class 12,new results,cbse results,12th results,result calculator,result prediction,cbse 2021,result 2021,results 2021,cbse policy,marking scheme,new scheme,cbse marks,12th marks, predictor, alphadevs" />
     <meta charset="UTF-8">
-	
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--===============================================================================================-->
@@ -69,9 +68,10 @@
         </a>
         <div class="whatsappbox flexdir">
             <p>Share on</p>
-            <a href="https://wa.me/?text=Hey, I have just check my class 12 board result prediction. Check yours at: https://newcbseresult.com"><i class="fa fa-whatsapp"
-                    style="font-size:35px;color:#57b846"></i></a>
-		
+            <a
+                href="https://wa.me/?text=Hey, I have just check my class 12 board result prediction. Check yours at: https://newcbseresult.com"><i
+                    class="fa fa-whatsapp" style="font-size:35px;color:#57b846"></i></a>
+
         </div>
     </nav>
 
@@ -89,60 +89,68 @@
             <form class="contact100-form validate-form"
                 action="https://script.google.com/macros/s/AKfycbzF-3e6ZwpW-wWiHN1AaIEVE6dEfBOjCgbamblPaEQJhCTejdr8_2GJPy3hxXuWfiNUwA/exec"
                 method="GET" onsubmit="getResult()">
-                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <div class="wrap-input100 validate-input custom-validation-child" data-validate="Name is required">
                     <span class="label-input100">Name:</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter Full name">
+                    <input class="input100 custom-validation-input" type="text" name="name"
+                        placeholder="Enter Full name">
                     <span class="focus-input100"></span>
                 </div>
 
 
-                <div class="wrap-input100 validate-input" data-validate="">
+                <div class="wrap-input100 validate-input custom-validation-child" data-validate="Invalid School Name">
                     <span class="label-input100">School:</span>
                     <!-- Dropdown -->
-                    <input id='selSchool' required="required" class="selectschools" type="text" name="selectschools"
+                    <input id='selSchool' class="selectschools custom-validation-input" type="text" name="selectschools"
                         placeholder="Type School Name" autocomplete="off">
                     <br />
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                <div class=" validate-input" data-validate="Invalid Data">
                     <span class="marksdata">Enter your highest 3 subjects 10th Marks:</span>
-                    <div class="flexdir topmargin wrap-input102">
-                        <input class="input100" type="number" id="m1" name="marksten1" placeholder="Marks Obtained 1">
-                        <input class="input100" required="required" id="o1" type="number" name="markstentotal1"
-                            placeholder="Total Marks">
+                    <div class="flexdir topmargin wrap-input102 custom-validation-child" data-validate="Invalid Data">
+                        <input class="input100 custom-validation-input marks-obtained-100" type="number" id="m1"
+                            name="marksten1" placeholder="Marks Obtained 1">
+                        <input class="input100 custom-validation-input max-marks-100" id="o1" type="number"
+                            name="markstentotal1" placeholder="Total Marks">
+                        <span class="focus-input100"></span>
                     </div>
-                    <div class="flexdir wrap-input102">
-                        <input class="input100" type="number" id="m2" name="marksten2" placeholder="Marks Obtained 2">
-                        <input class="input100" type="number" id="o2" name="markstentotal2" placeholder="Total Marks">
-                    </div>
-                    <div class="flexdir">
-                        <input class="input100" type="number" id="m3" name="marksten3" placeholder="Marks Obtained 3">
-                        <input class="input100" type="number" id="o3" name="markstentotal3" placeholder="Total Marks">
-                    </div>
+                    <div class="flexdir wrap-input102 custom-validation-child" data-validate="Invalid Data">
+                        <input class="input100 custom-validation-input marks-obtained-100" type="number" id="m2"
+                            name="marksten2" placeholder="Marks Obtained 2">
+                        <input class="input100 custom-validation-input max-marks-100" type="number" id="o2"
+                            name="markstentotal2" placeholder="Total Marks">
+                        <span class="focus-input100"></span>
 
-                    <span class="focus-input100"></span>
+                    </div>
+                    <div class="flexdir wrap-input102 custom-validation-child" data-validate="Invalid Data">
+                        <input class="input100 custom-validation-input marks-obtained-100" type="number" id="m3"
+                            name="marksten3" placeholder="Marks Obtained 3">
+                        <input class="input100 custom-validation-input max-marks-100" type="number" id="o3"
+                            name="markstentotal3" placeholder="Total Marks">
+                        <span class="focus-input100"></span>
+                    </div>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                <div class="wrap-input100 validate-input custom-validation-grandchild" data-validate="Invalid Data">
                     <span class="marksdata">Enter Your 11th Marks:</span>
                     <div class="flexdir topmargin">
-                        <input class="input100" id="m4" type="number" name="markselevengot"
-                            placeholder="Marks Obtained">
-                        <input class="input100" id="o4" type="number" name="markseleventotal" placeholder="Total Marks">
+                        <input class="input100 custom-validation-input marks-obtained-1000" id="m4" type="number"
+                            name="markselevengot" placeholder="Marks Obtained">
+                        <input class="input100 custom-validation-input max-marks-1000" id="o4" type="number"
+                            name="markseleventotal" placeholder="Total Marks">
                     </div>
-
-
                     <span class="focus-input100"></span>
                 </div>
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
+
+                <div class="wrap-input100 validate-input custom-validation-grandchild" data-validate="Invalid Data">
                     <span class="marksdata">Enter Your Recent 12th Marks:</span>
                     <div class="flexdir topmargin">
-                        <input class="input100" id="m5" type="number" name="markstwelvegot"
-                            placeholder="Marks Obtained">
-                        <input class="input100" id="o5" type="number" name="markstwelvetotal" placeholder="Total Marks">
+                        <input class="input100 custom-validation-input marks-obtained-1000" id="m5" type="number"
+                            name="markstwelvegot" placeholder="Marks Obtained">
+                        <input class="input100 custom-validation-input max-marks-1000" id="o5" type="number"
+                            name="markstwelvetotal" placeholder="Total Marks">
                     </div>
-
                     <span class="focus-input100"></span>
                 </div>
 
@@ -154,7 +162,7 @@
                 width: 100%;">
                     <span class=" label-input100 mt-2">Stream:</span>
                     <!-- Dropdown -->
-                    <select id='selStream' required="required"  name="selectstream" class="selectstream">
+                    <select id='selStream' name="selectstream" class="selectstream" required>
                         <option selected disabled value=''>Select Stream</option>
                         <option value='1'>PCM</option>
                         <option value='2'>PCB</option>
@@ -165,13 +173,15 @@
 
                 </div>
 
-                <div class="wrap-input100 validate-input btmm" data-validate="Valid email is required: ex@abc.xyz">
+                <div class="wrap-input100 validate-input btmm custom-validation-child"
+                    data-validate="Valid email is required: ex@abc.xyz">
                     <span class="label-input100">Email:</span>
-                    <input class="input100" type="text" name="email" placeholder="Enter email addess">
-<!--                     <span class="focus-input101">* Enter correct email as result will be sent</span> -->
+                    <input class="input100 custom-validation-input" type="text" name="email"
+                        placeholder="Enter email addess">
+                    <!--                     <span class="focus-input101">* Enter correct email as result will be sent</span> -->
                 </div>
-		    
-		    
+
+
 
                 <input type="hidden" name="result" id="result">
 
