@@ -40,9 +40,9 @@
                 return false;
             } else if ($(input).val() < 0) {
                 return false;
-            } else if ($(input).hasClass("max-marks-100") && $(input).val() > 100) {
+            } else if ($(input).hasClass("max-marks-100") && $(input).val() > 500) {
                 return false;
-            } else if ($(input).hasClass("max-marks-1000") && $(input).val() > 1000) {
+            } else if ($(input).hasClass("max-marks-1000") && $(input).val() > 5000) {
                 return false;
             } else if ($(input).hasClass("marks-obtained-100")) {
                 if (Number($(input).parent().find(".max-marks-100").val()) < Number($(input).val()))
