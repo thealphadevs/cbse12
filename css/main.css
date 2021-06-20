@@ -604,12 +604,12 @@ textarea.input100 {
 }
 
 
-.footerright>p>a {
+.footerright>div>a {
 	font-size: 19px;
 	color: white;
 }
 
-.footerright>p>a:hover {
+.footerright>div>a:hover {
 	font-size: 19px;
 	color: #57b846;
 }
@@ -642,13 +642,14 @@ textarea.input100 {
 		display: flex;	
 		
 	}
-	.footerright>p>a {
+	.footerright>div {
 		font-size: 17px;
 		margin-left:29px;
 	}
 
-	.footerright>p>a:hover {
-		font-size: 17px;
+	.footerright>div>a:hover {
+		font-size: 19px;
+		color:#57b846;
 	}
 
 	.footerleft {
